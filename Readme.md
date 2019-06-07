@@ -1,1 +1,1 @@
-# Repositório para o Minicurso de MicroPython com ESP32
+# Minicurso de MicroPython com ESP32

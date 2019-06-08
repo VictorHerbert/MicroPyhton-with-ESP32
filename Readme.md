@@ -1,12 +1,13 @@
 # Minicurso de MicroPython com ESP32
 
-*Práticas
-  *Blink
-  *Sistema de Arquivos
-  *Semáforo
-  *PWM e ADC (LED e Potenciometro)
-  *Buzzer
-  *Sensor Ultrassônico
+## Conteúdo
+* Práticas
+  * Blink & Hello World
+  * Sistema de Arquivos
+  * Leds
+  * PWM e ADC
+  * Buzzer
+  * Sensor Ultrassônico
   
-*MiniProjetinho
-  +Servidor
+* MiniProjetinho
+  * Servidor

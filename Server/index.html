@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+  <head>
+  <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
+  <meta charset="UTF-8">
+    <style type="text/css" id="style">
+      html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}
+      .button { background-color: #195B6A;border: none; color: white; padding: 16px 40px;text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer;  margin-bottom: 1cm;}
+      button:active { 
+        background-color: #00d0ff;
+      }
+      .textbox{
+        padding: 16px 100px;
+        background-color: #0ac0ea;
+        color: #ffebfd;
+        outline: none;
+        font-size: 30px;
+        margin-bottom: 1cm;
+      }      
+      
+      
+    </style>
+    <title>ESP32</title>
+    </head>
+    <body>
+      <button type="button" class="button" id= "bt1">Ligar</button>
+      <button type="button" class="button" id= "bt2">Desligar</button>
+      <p></p>
+      <text class="textbox" id= "dataText">
+        30
+      </text>      
+      
+    </body>
+    
+    <script language="javascript">
+	function CheckUpdate() {
+	        xmlhttp=new XMLHttpRequest();
+	        xmlhttp.open("GET","dataout",true);
+	        xmlhttp.send();
+	        xmlhttp.onreadystatechange = function(){
+			if (xmlhttp.readyState==4 && xmlhttp.status==200){
+				document.getElementById("dataText").innerHTML = xmlhttp.responseText
+			}
+		}
+
+	        console.log(xmlhttp.responseText);
+	}
+
+       setInterval(CheckUpdate, 500);
+
+      function bt1(){
+        xmlhttp=new XMLHttpRequest();
+        xmlhttp.open("GET","bt1",true);
+        xmlhttp.send();
+      }
+      
+      function bt2(){
+        xmlhttp=new XMLHttpRequest();
+        xmlhttp.open("GET","bt2",true);
+        xmlhttp.send();
+
+      }
+
+      document.getElementById("bt1").addEventListener("click", bt1);
+      document.getElementById("bt2").addEventListener("click", bt2);	
+
+    </script> 
+    </html>

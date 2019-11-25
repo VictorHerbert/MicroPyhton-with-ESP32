@@ -1,0 +1,73 @@
+tm = tm1638.TM1638(stb=Pin(5),clk = Pin(18),dio = Pin(19))
+tm.leds(0b01010101)
+tm.leds(1)
+tm.leds(101)
+tm.leds(2)
+tm.leds(10)
+tm.show('abcdefgh')
+p('oi)
+p
+p('oi)
+cls
+p
+p()
+p("oi")
+p('oi')
+p('owd')
+p('123')
+p('125')
+tm.brightness(0)
+tm.brightness(1)
+tm.brightness(10)
+tm.brightness(4)
+tm.brightness(6)
+tm.brightness(8)
+print(response.text)
+wlan.ifconfig()
+import network
+wlan.ifconfig()
+rtc.datetime()
+scroll(dy = 10)
+oled.scroll(dy = 10)
+scroll(dy = 10)
+oled.scroll(0,10)
+oled.scroll(0,20)
+oled.scroll(20,20)
+oled.scroll(0,0)
+firebase.push(URL, {'data':2})
+firebase.put(URL, {'data':6234})
+firebase.put(URL, {'data':634}
+firebase.put(URL, {'data1':4346})
+import os
+os.stat
+os.stat()
+os.statvfs()
+import ESP
+import import gc
+import micropython
+micropython.mem_info
+micropython.mem_info()
+firebase.close
+rtc.datetime()
+help(tc.datetime())
+help tc
+help rtc
+help(rtc)
+help(rtc.datetime)
+rtc.datetime()
+rtc.datetime(2019,10,6,20,30,0,0,0)
+rtc.datetime((2019,10,6,20,30,0,0,0))
+rtc.datetime()
+rtc.datetime((2017, 8, 23, 1, 12, 48, 0, 0))
+rtc.datetime()
+tc.datetime()
+rtc.datetime()
+rtc.datetime((2019,10,6,100,100,100,100,100))
+rtc.datetime()
+rtc.datetime((2019,10,6,1,20,32,0,0))
+rtc.datetime()
+rtc.datetime((0,0,0,0,0,0,0,0))
+rtc.datetime()
+
+rtc.datetime()
+import networkSetup

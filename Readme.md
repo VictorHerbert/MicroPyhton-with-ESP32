@@ -1,4 +1,6 @@
-# Minicurso de 
+# ESP32 MicroPython
+
+Repository containing some libs and examples
 
 ## Oficial Documentation
 * [Espressif](https://www.espressif.com/en/products/hardware/esp32/overview)
